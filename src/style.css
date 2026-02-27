@@ -1,0 +1,141 @@
+@property --gradient-angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+@keyframes rotation {
+    0%      { --gradient-angle: 0deg; }
+    100%    { --gradient-angle: 360deg; }
+}
+
+@font-face {
+    font-family: Glitch;
+    src: url(glitch.ttf);
+}
+
+@font-face {
+    font-family: Bastard;
+    src: url(bastard.ttf);
+}
+
+:root {
+    --clr-bg: #120020;
+    --clr-lg: #160030;
+    
+    --clr-01: #ac3232;
+    --clr-02: #df7126;
+    --clr-03: #fbf236;
+    --clr-04: #6abe30;
+    --clr-05: #5b6ee1;
+    --clr-06: #3f3f74;
+    --clr-07: #76428a;
+    --clr-08: #d77bba;
+    
+    --text-color: #d6b7ff;
+}
+
+body {
+    background: var(--clr-bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+* {
+    scrollbar-width: none;
+}
+
+
+
+.card {
+    height: 600px;
+    aspect-ratio: 1.5 / 1;
+    background: var(--clr-lg);
+    border-radius: 75px;
+    margin-top: 50px;
+
+    position: relative;
+}
+
+.card::before,
+.card::after {
+    content: "";
+    position: absolute;
+    inset: -7.5px;
+    background: conic-gradient(
+        from var(--gradient-angle),
+        var(--clr-01),
+        var(--clr-02),
+        var(--clr-03),
+        var(--clr-04),
+        var(--clr-05),
+        var(--clr-06),
+        var(--clr-07),
+        var(--clr-08),
+        var(--clr-01));
+    border-radius: inherit;
+    animation: rotation 20s linear infinite;
+    z-index: -1;
+}
+
+.card::after {
+    filter: blur(50px);
+}
+
+.card-child {
+    text-align: center;
+    overflow: auto;
+    scrollbar-width: none;
+    max-width: 100%;
+    max-height: 100%;
+    position: relative;
+}
+
+.card-fade {
+    background: linear-gradient(to top, var(--clr-lg), transparent);
+    width: 80%;
+    position: absolute;
+    height: 100px;
+    display: block;
+    bottom: 0;
+    left: 10%;
+    right: 10%;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.link {
+    color: var(--text-color);
+    font-family: Bastard;
+    font-size: 48px;
+    text-decoration: none;
+    
+    text-align: center;
+    align-content: center;
+
+    position: relative;
+    transition: all 0.5s;
+}
+
+.link:hover {
+    transition: all 0.5s;
+    font-size: 56px;
+}
+
+
+.logo {
+    margin-top: 25px;
+    width: 200px;
+    height: 200px;
+    transition: all 0.5s;
+    margin-bottom: 25px;
+}
+
+.logo:hover {
+    width: 250px;
+    height: 250px;
+    transition: all 0.5s;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
