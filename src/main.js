@@ -13,9 +13,6 @@ function addLinks() {
     addLink("Join my Discord server", "https://discord.gg/7TNTK6uBdP");
     addLink("-----------------------------");
     addLink("Follow me on GitHub", "https://github.com/OP-Hero");
-    addLink("-----------------------------");
-    
-    addLink("----That's it for now----");
     addLink("");
     addLink("");
     addLink("");
