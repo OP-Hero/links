@@ -8,11 +8,18 @@
 
 
 function addLinks() {
-    addLink("Check out my modrinth", "https://modrinth.com/user/OP_Hero");
-    addLink("-----------------------------");
-    addLink("Join my Discord server", "https://discord.gg/7TNTK6uBdP");
-    addLink("-----------------------------");
-    addLink("Follow me on GitHub", "https://github.com/OP-Hero");
+    addLink("");
+    addLink("Check&thinsp;&thinsp;&thinsp;out&thinsp;&thinsp;&thinsp;my<br>modrinth", "https://modrinth.com/user/OP_Hero");
+    addLink("");
+    addLink("----------------");
+    addLink("");
+    addLink("Join&thinsp;&thinsp;&thinsp;my&thinsp;&thinsp;&thinsp;Discord<br>server", "https://discord.gg/7TNTK6uBdP");
+    addLink("");
+    addLink("----------------");
+    addLink("");
+    addLink("Follow&thinsp;&thinsp;&thinsp;me&thinsp;&thinsp;&thinsp;on<br>GitHub", "https://github.com/OP-Hero");
+    addLink("");
+    addLink("----------------");
     addLink("");
     addLink("");
     addLink("");
