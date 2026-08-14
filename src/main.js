@@ -13,7 +13,7 @@ function addLinks() {
     addLink("");
     addLink("----------------");
     addLink("");
-    addLink("Join&thinsp;&thinsp;&thinsp;my&thinsp;&thinsp;&thinsp;Discord<br>server", "https://discord.gg/7TNTK6uBdP");
+    addLink("Join&thinsp;&thinsp;&thinsp;my&thinsp;&thinsp;&thinsp;Discord<br>server", "https://discord.gg/adhd");
     addLink("");
     addLink("----------------");
     addLink("");
